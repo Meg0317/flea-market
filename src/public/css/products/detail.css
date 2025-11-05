@@ -1,0 +1,256 @@
+.detail-area {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1380x;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.detail-form__image-area,
+.detail-form__input-area {
+    flex: 1;
+    /* 左右で50%ずつ */
+}
+
+.card-image {
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    /* 正方形を維持 */
+    object-fit: cover;
+    /* トリミングして収める */
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #F8F8F8;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    /* 縦に並べる */
+    gap: 3px;
+    /* 各項目の間隔 */
+}
+
+.product-name {
+    font-size: 45px;
+    font-weight: bold;
+    /* 必要なら強調 */
+}
+
+.product-brand {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.price-wrap {
+    display: flex;
+    /* 横並び */
+    align-items: baseline;
+    /* 数字と文字の高さを揃える */
+    gap: 4px;
+    /* 値段と(税込)の間隔 */
+    font-size: 45px;
+}
+
+.yen,
+.tax {
+    font-size: 30px;
+}
+
+.price {
+    font-size: 45px;
+}
+
+.icons {
+    display: flex;
+    /* 横並び */
+    gap: 40px;
+    /* アイコン同士の間隔 */
+    justify-content: flex-start;
+    /* 左寄せ（中央にしたいなら center） */
+    margin: 10px 30px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    /* アイコンの上に数字を縦並び */
+    align-items: center;
+    /* 中央揃え */
+}
+
+.icon-item img {
+    width: 40px;
+    /* アイコンの大きさ調整 */
+    height: 40px;
+    object-fit: contain;
+}
+
+.icon-comments {
+    margin-bottom: 4px;
+}
+.like-button img {
+    transition: filter 0.3s ease;
+    filter: none;
+    /* 通常：黒 */
+}
+
+.like-button.active img {
+    /* 黒→赤への色変換 */
+    filter: invert(17%) sepia(96%) saturate(7492%) hue-rotate(356deg) brightness(93%) contrast(122%);
+}
+
+.count {
+    font-size: 18px;
+    /* 数字の大きさ */
+    /* アイコンと数字の間隔 */
+    font-weight: bold;
+}
+
+.user-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.user-wrap img,
+.user-wrap .no-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.user-wrap .no-image {
+    background-color: #D9D9D9;
+}
+
+.user-wrap span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.comments-wrap {
+    display: flex;
+    margin-bottom: 20px;
+}
+.comments-title,
+.comment-count {
+    font-size: 36px;
+    color: #5F5F5F;
+}
+
+.detail-form__send-btn {
+    padding: 10px;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background: #FF5555;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.description-text {
+    font-size: 24px;
+    line-height: 1.6;
+    /* 読みやすく */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.detail-form__information-area {
+    margin-bottom: 40px;
+    /* ← コメントエリアとの間隔（お好みで調整） */
+}
+
+.information-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.information-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* 項目間の余白 */
+}
+
+/* 各「カテゴリー」「状態」ペアをflexにする */
+.information-item {
+    display: flex;
+    align-items: center;
+}
+
+/* 左側（dt） */
+.information-term {
+    width: 140px;
+    /* 固定幅を設定（調整可） */
+    font-weight: bold;
+    color: #333;
+    flex-shrink: 0;
+}
+
+/* 右側（dd） */
+.information-desc {
+    color: #555;
+    flex: 1;
+}
+
+/* カテゴリーラベル */
+.category-label {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 4px 10px;
+    margin-right: 6px;
+    font-size: 0.9em;
+    border: 2px solid #D9D9D9;
+    background: #D9D9D9;
+    color: #000;
+}
+
+.comment-label {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.comments {
+    margin-bottom: 20px;
+}
+
+.comments-form__textarea {
+    width: 400px;
+    min-height: 80px;
+    border: 1.5px solid #5F5F5F;
+    border-radius: 3px;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .detail-area {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+}

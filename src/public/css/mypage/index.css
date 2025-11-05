@@ -1,0 +1,150 @@
+.mypage-area {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.profile-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.mypage-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-wrap img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #D9D9D9;
+    /* 画像がない場合の背景 */
+}
+
+.user-wrap span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* プロフィール編集ボタン */
+.profile-menu .profile-change__send {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 1.5px solid #FF5555;
+    /* 赤枠 */
+    color: #FF5555;
+    /* 赤文字 */
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.profile-menu .profile-change__send:hover {
+    background-color: #FF5555;
+    color: #fff;
+}
+
+.profile-change__send {
+    border-radius: 3px;
+    border: 2px solid #FF5555;
+    width: 200px;
+    padding: 10px 0;
+    color: #FF5555;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.product-menu {
+    display: flex;
+    gap: 20px;
+    /* 「おすすめ」と「マイリスト」の間隔 */
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #5F5F5F;
+    /* 画面いっぱいの区切り線 */
+    box-sizing: border-box;
+}
+
+.product-menu a {
+    text-decoration: none;
+}
+
+.card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.list-block {
+    display: block;
+    /* 横並びにならないように */
+    width: 100%;
+    /* 画面いっぱい */
+    margin-top: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4列グリッド */
+    gap: 32px;
+    padding: 20px 0;
+    /* 上下余白 */
+}
+
+.card {
+    overflow: hidden;
+    width: 100%;
+    max-width: 290px;
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.card a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* 商品名を画像の下・左寄せで表示 */
+.card p {
+    margin: 6px 0 0 4px;
+    /* 上に少し余白＋左寄せ */
+    font-size: 14px;
+    text-align: left;
+}
+
+a.active {
+    font-weight: bold;
+    color: #FF0000
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .product-area {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+}

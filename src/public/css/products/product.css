@@ -1,0 +1,101 @@
+.product-menu {
+    display: flex;
+    gap: 20px;
+    /* 「おすすめ」と「マイリスト」の間隔 */
+    padding: 10px 70px;
+    width: 100%;
+    border-bottom: 1px solid #5F5F5F;
+    /* 画面いっぱいの区切り線 */
+    box-sizing: border-box;
+}
+
+.product-menu a {
+    text-decoration: none;
+    color: #5F5F5F;
+    font-weight: bold;
+}
+
+.list-block {
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4列グリッド */
+    gap: 32px;
+    padding: 20px 0; /* 上下余白 */
+}
+
+.product-item {
+    text-align: left;
+}
+
+.card {
+    overflow: hidden;
+    width: 100%;
+    max-width: 290px;
+    /* カード自体も最大290pxにしたい場合 */
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.product-name {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.active {
+    font-weight: bold;
+    color:#FF0000
+}
+
+.image-wrap {
+    position: relative;
+}
+
+.sold-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgba(255, 0, 0, 0.85);
+    color: #fff;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .product-area {
+        max-width: 1400px;
+        /* ← 600pxは狭すぎ！1400pxに合わせる */
+        margin: 0 auto;
+        /* ← 中央寄せ */
+        padding: 0 40px;
+        /* ← 両端に適度な余白 */
+        box-sizing: border-box;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        /* ← 4列グリッド維持 */
+        gap: 24px;
+        /* ← 少しだけ隙間を調整しても良い */
+    }
+}

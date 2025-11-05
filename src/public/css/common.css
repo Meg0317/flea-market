@@ -1,0 +1,130 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #E0DFDE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 8px 0;
+    /* 高さ調整 */
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 61px;
+}
+
+.header__inner {
+    max-width: 1230px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.header-utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.header img {
+    height: 32px;
+    /* Figma通り */
+    width: auto;
+    display: block;
+    /* 行間余白防止 */
+}
+
+.search-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* 検索ボックス */
+.header__inner__keyword-input {
+    flex: 1;
+    max-width: 500px;
+    padding: 0.25em 2em;
+    /* 左1文字分、右5文字分くらい */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fff;
+    /* 白背景 */
+    color: #000000;
+    /* 黒文字 */
+}
+
+.header-utilities nav {
+    flex-shrink: 0;
+    /* 幅を削られないようにする */
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    /* ← 黒丸消す */
+    margin: 0;
+    /* デフォルト余白消す */
+    padding: 0;
+}
+
+/* ナビゲーションリンク（マイページ・ログイン） */
+.header-nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.header-nav__button {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* 出品ボタン */
+.header-nav__item--sell a {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    /* 左右に0.5文字分くらいの余白 */
+    border: 1px solid #000;
+    border-radius: 4px;
+    background: #fff;
+    /* 白背景 */
+    color: #000;
+    /* 黒文字 */
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .header {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+}

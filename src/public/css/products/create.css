@@ -1,0 +1,206 @@
+.exhibit-form__content {
+    max-width: 680px;
+    /* figma指定幅 */
+    margin: 0 auto;
+    /* 中央寄せ */
+    padding: 40px 0;
+    /* 上下余白 */
+}
+
+.exhibit-form__heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.exhibit-form__inner {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.exhibit-form__form {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.exhibit-form__group {
+    margin-bottom: 24px;
+}
+
+.exhibit-form__label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.image-upload-box {
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.image-upload-input {
+    display: none;
+}
+
+/* 「画像を選択する」ラベルボタン */
+.image-upload-label {
+    display: inline-block;
+    color: #ff4b4b;
+    /* 赤文字 */
+    border: 2px solid #ff4b4b;
+    /* 赤枠 */
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    text-align: center;
+    font-size: 16px;
+    width: 168px;
+    height: 43.46px;
+    line-height: 23px;
+    /* 中央揃え調整 */
+}
+
+.exhibit-form__error-message {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ラベル本体 */
+.category-item {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.category-item input[type="checkbox"] {
+    display: none;
+}
+
+/* 通常状態 */
+.category-item span {
+    display: inline-block;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+/* 選択時（赤枠） */
+.category-item input[type="checkbox"]:checked+span {
+    /* border-color: #ff0000; */
+    background-color: #ff0000;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.form__input--text input,
+.price-input-wrap,
+.form__input--textarea textarea {
+    width: 100%;
+    border: 1px solid #5F5F5F;
+    border-radius: 3px;
+    appearance: none;
+    box-sizing: border-box;
+    padding: 8px 16px;
+}
+
+.price-input-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.price-symbol {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.price-input-wrap input {
+    padding-left: 10px;
+    /* ¥ぶんの余白を確保 */
+}
+
+.form__input--textarea textarea {
+    height: 144px;
+}
+
+.exhibit-form__select-inner {
+    position: relative;
+    width: 100%;
+}
+
+.exhibit-form__select-inner::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #5F5F5F;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* ←これ重要 */
+}
+
+.exhibit-form__select {
+    padding: 8px 16px;
+    width: 100%;
+    color: #5F5F5F;
+    border: 1px solid #5F5F5F;
+    border-radius: 3px;
+    appearance: none;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #FF5555;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .product-create-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+}
+
+/* @media (max-width: 768px) {
+    .product-create-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .category-item span {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+} */
