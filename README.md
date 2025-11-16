@@ -93,10 +93,16 @@ php artisan db:seed
 
 ## ER 図
 
-<!-- ![alt](er-diagram.png) -->
+![alt](er-diagram.png)
 
 ## URL
 
 - 開発環境：http://localhost/
 - phpMyAdmin:：http://localhost:8080/
 - mailhog：http://localhost:8025
+
+## 補足
+
+・一定時間経過するとログイン認証を求められる仕様です
+・購入済みの商品は商品購入画面の購入ボタンを表示しないようにし、再購入できない仕様です
+・COACHTECH のリンクをクリックするとホーム画面（商品一覧画面）に遷移します）戻るボタンがないため

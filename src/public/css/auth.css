@@ -5,7 +5,7 @@ body {
 
 .header {
     background: #000;
-    padding: 0 15px;
+    padding: 10px 15px;
     height: 60px;
     /* 高さ固定 */
     display: flex;
@@ -26,10 +26,9 @@ body {
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1540px) {
-    .header {
+    .header__inner {
         max-width: 1400px;
         margin: 0 auto;
         padding: 0 40px;
-        box-sizing: border-box;
     }
 }

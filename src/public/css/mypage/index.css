@@ -7,9 +7,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 680px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 24px 0;
+    padding: 70px 0;
 }
 
 .mypage-menu {
@@ -20,34 +20,38 @@
 .user-wrap {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 80px;
 }
 
-.user-wrap img {
+.profile-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    background-color: #D9D9D9;
-    /* 画像がない場合の背景 */
+}
+
+.profile-image.default {
+    background-color: #ccc;
+    display: inline-block;
 }
 
 .user-wrap span {
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
 }
 
 /* プロフィール編集ボタン */
 .profile-menu .profile-change__send {
     display: inline-block;
-    padding: 10px 24px;
-    border: 1.5px solid #FF5555;
+    padding: 10px 30px;
+    border: 2px solid #FF5555;
     /* 赤枠 */
     color: #FF5555;
     /* 赤文字 */
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 22px;
+    font-weight: bold;
     text-decoration: none;
     transition: background-color 0.2s, color 0.2s;
 }
@@ -57,7 +61,7 @@
     color: #fff;
 }
 
-.profile-change__send {
+/* .profile-change__send {
     border-radius: 3px;
     border: 2px solid #FF5555;
     width: 200px;
@@ -67,21 +71,34 @@
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-}
+} */
 
 .product-menu {
     display: flex;
-    gap: 20px;
-    /* 「おすすめ」と「マイリスト」の間隔 */
-    padding: 10px 0;
+    gap: 60px;
+    padding: 10px 120px;
     width: 100%;
-    border-bottom: 1px solid #5F5F5F;
-    /* 画面いっぱいの区切り線 */
     box-sizing: border-box;
+    position: relative;
+    /* ← 擬似要素の基準 */
+}
+
+.product-menu::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    /* ← 画面幅いっぱい */
+    border-bottom: 2px solid #5F5F5F;
+    pointer-events: none;
 }
 
 .product-menu a {
     text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .card a {

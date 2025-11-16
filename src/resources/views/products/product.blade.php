@@ -14,8 +14,8 @@
         <a href="/?tab=mylist" class="{{ $tab === 'mylist' ? 'active' : '' }}">
             マイリスト
         </a>
-
     </div>
+
     <div class="list-block">
         <div class="product-grid">
             @foreach ($products as $product)

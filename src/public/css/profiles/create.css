@@ -1,10 +1,11 @@
 .create-form__content {
-    width: 680px;
+    width: 640px;
     margin: 0 auto;
     padding: 40px 0;
 }
 
 .create-form__heading {
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -15,30 +16,35 @@
     margin-top: 48px;
 }
 
-.create-form__form {
-    padding: 64px 96px;
-    width: 60vw;
+h2 {
+    font-size: 35px;
+}
+
+.create-form__inner form {
+    width: 100%;
+    max-width: 640px;
 }
 
 .form__group-image {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     /* 画像とボタンの間隔 */
+    margin-bottom: 60px;
 }
 
 /* 画像（登録済み） */
 .profile-image {
-    width: 70px;
-    height: 70px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 /* 画像なし（デフォルトの灰丸） */
 .profile-image--default {
-    width: 70px;
-    height: 70px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     background-color: #d9d9d9;
 }
@@ -54,15 +60,15 @@
     /* 赤文字 */
     border: 2px solid #ff4b4b;
     /* 赤枠 */
-    padding: 10px 24px;
+    padding: 8px 15px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s;
     text-align: center;
-    font-size: 16px;
-    width: 168px;
-    height: 43.46px;
+    font-size: 18px;
+    /* width: 168px;
+    height: 43.46px; */
     line-height: 23px;
     /* 中央揃え調整 */
 }
@@ -80,23 +86,32 @@
     text-align: left;
 }
 
-.register-form__error-message {
+.form__group-content {
+    margin-bottom: 30px;
+}
+
+.create-form__error-message {
     height: 20px;
     color: #FF5555;
     text-align: left;
+}
+
+.form__label--item {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .form__input--text input {
     padding: 10px;
     width: 100%;
     height: 40px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
+    border: 1px solid #5F5F5F;
+    border-radius: 6px;
     appearance: none;
 }
 
 .form__button {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .form__button-submit {
@@ -108,6 +123,8 @@
     background: #FF5555;
     color: #fff;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .edit-form__error-message {

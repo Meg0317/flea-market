@@ -10,9 +10,14 @@
     <div class="profile-area">
         <div class="mypage-menu">
             <div class="user-wrap">
-                <img src="{{ $profile->image ?? '/images/default.png' }}"
-                    alt=""
-                    width="50">
+                @if ($profile->image)
+                    <img src="{{ asset('storage/' . $profile->image) }}"
+                        alt="プロフィール画像"
+                        class="profile-image"
+                        width="50">
+                @else
+                    <div class="profile-image default"></div>
+                @endif
                 <span>{{ $profile->user->name }}</span>
             </div>
         </div>

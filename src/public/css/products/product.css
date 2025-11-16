@@ -1,18 +1,31 @@
 .product-menu {
     display: flex;
-    gap: 20px;
-    /* 「おすすめ」と「マイリスト」の間隔 */
-    padding: 10px 70px;
+    gap: 60px;
+    padding: 10px 160px;
+    margin-top: 40px;
     width: 100%;
-    border-bottom: 1px solid #5F5F5F;
-    /* 画面いっぱいの区切り線 */
     box-sizing: border-box;
+    position: relative;
+    /* ← 擬似要素の基準 */
+}
+
+.product-menu::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    /* ← 画面幅いっぱい */
+    border-bottom: 2px solid #5F5F5F;
+    pointer-events: none;
 }
 
 .product-menu a {
     text-decoration: none;
     color: #5F5F5F;
     font-weight: bold;
+    font-size: 25px;
 }
 
 .list-block {
@@ -25,7 +38,7 @@
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4列グリッド */
-    gap: 32px;
+    gap: 90px;
     padding: 20px 0; /* 上下余白 */
 }
 
@@ -47,8 +60,7 @@
 }
 
 .product-name {
-    margin-top: 8px;
-    font-size: 12px;
+    font-size: 24px;
     font-weight: 400;
     color: #000000;
     text-decoration: none;
@@ -95,7 +107,7 @@ a.active {
     .product-grid {
         grid-template-columns: repeat(4, 1fr);
         /* ← 4列グリッド維持 */
-        gap: 24px;
+        gap: 60px;
         /* ← 少しだけ隙間を調整しても良い */
     }
 }

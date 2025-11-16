@@ -4,34 +4,33 @@ body {
     padding: 0;
 }
 
-.header {
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid #E0DFDE;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 8px 0;
-    /* 高さ調整 */
-    box-sizing: border-box;
-}
-
 body {
     padding-top: 61px;
 }
 
-.header__inner {
-    max-width: 1230px;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    background: #000;
+    border-bottom: 1px solid #E0DFDE;
+    z-index: 1000;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+.header__inner {
+    max-width: 1400px;
+    /* ← ここで中央寄せ */
+    margin: 0 auto;
+    /* ← */
+    padding: 0 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
-    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .header-utilities {
@@ -64,7 +63,7 @@ body {
     /* 左1文字分、右5文字分くらい */
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 24px;
     background: #fff;
     /* 白背景 */
     color: #000000;
@@ -79,7 +78,7 @@ body {
 .header-nav {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
     list-style: none;
     /* ← 黒丸消す */
     margin: 0;
@@ -91,7 +90,7 @@ body {
 .header-nav__link {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 24px;
     white-space: nowrap;
 }
 
@@ -99,9 +98,10 @@ body {
     border: none;
     background: transparent;
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     white-space: nowrap;
+    font-size: 24px;
 }
 
 /* 出品ボタン */
@@ -116,15 +116,14 @@ body {
     color: #000;
     /* 黒文字 */
     text-decoration: none;
-    font-size: 14px;
+    font-size: 24px;
     white-space: nowrap;
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1540px) {
-    .header {
+    .header__inner {
         max-width: 1400px;
         margin: 0 auto;
         padding: 0 40px;
-        box-sizing: border-box;
     }
 }

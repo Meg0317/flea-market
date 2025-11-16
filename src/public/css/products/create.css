@@ -10,12 +10,14 @@
 .exhibit-form__heading {
     margin-bottom: 20px;
     text-align: center;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .exhibit-form__inner {
     display: flex;
     justify-content: center;
-    margin-top: 48px;
+    margin-top: 30px;
 }
 
 .exhibit-form__form {
@@ -26,18 +28,23 @@
 
 .exhibit-form__group {
     margin-bottom: 24px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #5F5F5F;
 }
 
 .exhibit-form__label {
     display: block;
     font-weight: bold;
-    margin-bottom: 8px;
+    font-size: 26px;
+    color: #000;
+    margin-bottom: 10px;
 }
 
 .image-upload-box {
     height: 150px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 1px dashed #5F5F5F;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +73,7 @@
     height: 43.46px;
     line-height: 23px;
     /* 中央揃え調整 */
+    margin-bottom: 20px;
 }
 
 .exhibit-form__error-message {
@@ -118,6 +126,15 @@
     appearance: none;
     box-sizing: border-box;
     padding: 8px 16px;
+}
+
+.form__group-content {
+    margin-bottom: 20px;
+}
+
+.explanation-line {
+    color: #5F5F5F;
+    margin-top: 10px;
 }
 
 .price-input-wrap {
@@ -176,12 +193,15 @@
 .form__button-submit {
     padding: 10px;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border: none;
     border-radius: 3px;
     background: #FF5555;
     color: #fff;
+    font-size: 26px;
+    font-weight: bold;
     cursor: pointer;
+    margin-top: 60px;
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1540px) {

@@ -5,8 +5,14 @@
 }
 
 .edit-form__heading {
+    margin-top: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
+}
+
+h2 {
+    font-size: 35px;
 }
 
 .edit-form__inner {
@@ -17,42 +23,41 @@
 
 .edit-form__inner form {
     width: 100%;
-    max-width: 680px;
+    max-width: 640px;
     /* ← edit-form__content に合わせる */
 }
-
-/* .edit-form__form {
-    padding: 64px 96px;
-    width: 60vw;
-} */
 
 .form__input--text input,
 .form__button-submit {
     width: 100%;
+    height: 50px;
+    padding: 10px;
     box-sizing: border-box;
-    border: 1px #5F5F5F;
+    border: 1px solid #5F5F5F;
+    border-radius: 4px;
+    appearance: none;
 }
 
 .form__group-image {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     /* 画像とボタンの間隔 */
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 /* 画像（登録済み） */
 .profile-image {
-    width: 70px;
-    height: 70px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 /* 画像なし（デフォルトの灰丸） */
 .profile-image--default {
-    width: 70px;
-    height: 70px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     background-color: #d9d9d9;
 }
@@ -90,27 +95,27 @@
     margin-bottom: 5px;
 }
 
+.form__group-content {
+    margin-bottom: 30px;
+}
+
 .form__group-title {
     text-align: left;
 }
 
-.register-form__error-message {
-    height: 20px;
-    color: #FF5555;
-    text-align: left;
+.form__label--item {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .form__input--text input {
-    padding: 10px;
-    width: 100%;
-    height: 40px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    appearance: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5F5F5F;
 }
 
 .form__button {
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .form__button-submit {
@@ -122,6 +127,8 @@
     background: #FF5555;
     color: #fff;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .edit-form__error-message {

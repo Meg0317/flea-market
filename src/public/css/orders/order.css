@@ -9,14 +9,14 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 30px;
 }
 
 /* 各ブロック（上・中・下） */
 .order-form__block {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 100px;
     /* 左右の間隔 */
 }
 
@@ -29,9 +29,9 @@
     width: 34%;
 }
 
-.order-form__block+.order-form__block {
+/* .order-form__block+.order-form__block {
     margin-top: 20px;
-}
+} */
 
 /* ===============================
    上ブロック：商品画像・情報・テーブル
@@ -43,7 +43,7 @@
 .order-form__card-area {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 40px;
     position: relative;
 }
 
@@ -54,6 +54,7 @@
     border-radius: 8px;
     border: 1px solid #ccc;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 
 /* 商品名・価格 */
@@ -65,13 +66,14 @@
 }
 
 .product-list {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
+    color: #000000;
 }
 
 .price-list {
-    font-size: 16px;
-    color: #333;
+    font-size: 30px;
+    color: #000000;
 }
 
 /* 商品エリア内の区切り線 */
@@ -79,16 +81,16 @@
     position: absolute;
     left: 0;
     bottom: -16px;
-    width: 710px;
+    width: 650px;
     border: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #000000;
 }
 
 /* ===============================
    テーブル（右側）
 ================================ */
 .order-table {
-    width: 90%;
+    width: 345px;
     border: 1px solid #000;
     border-collapse: collapse;
     background-color: #fff;
@@ -96,9 +98,9 @@
 
 .order-table th,
 .order-table td {
-    padding: 10px 12px;
+    padding: 41px 12px;
     border-bottom: 1px solid #000;
-    text-align: left;
+    text-align: center;
 }
 
 .order-table th {
@@ -130,24 +132,28 @@
 .payment-label {
     font-weight: bold;
     margin-bottom: 8px;
+    font-size: 20px;
+    margin-left: 30px;
 }
 
 .order-form__select-inner {
     width: 240px;
     padding: 10px;
     font-size: 15px;
-    margin-left: 20px;
+    margin-left: 40px;
     /* ← 少し右にずらす */
 }
 
 /* プルダウン */
 .order-form__select {
-    width: 220px;
+    width: 240px;
     padding: 10px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #5F5F5F;
     border-radius: 4px;
     background-color: #fff;
     font-size: 15px;
+    color: #5F5F5F;
+    margin-left: 20px;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -158,6 +164,8 @@
     background-size: 6px 6px, 6px 6px;
     background-repeat: no-repeat;
     cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 /* エラーメッセージ */
@@ -171,7 +179,8 @@
 .payment-divider {
     display: block;
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #000000;
+    width: 650px;
     margin: 20px 0;
 }
 
@@ -180,6 +189,7 @@
     display: flex;
     align-items: center; /* プルダウンと高さ合わせ */
     justify-content: flex-end;
+    margin-top: 20px;
 }
 
 .order-form__send-btn {
@@ -191,7 +201,7 @@
     border: none;
     border-radius: 4px;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -213,13 +223,15 @@
 
 .address-label {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
 .address-change__send {
     color: #007BFF;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
+    margin-right: 20px;
 }
 
 .address-change__send:hover {
@@ -229,18 +241,23 @@
 /* 住所情報 */
 .address-list {
     margin-left: 1.5em;
+    margin-bottom: 50px;
 }
 
 .address-list span {
     display: block;
     line-height: 1.8;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 40px;
 }
 
 /* 区切り線 */
 .address-divider {
     display: block;
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #000000;
+    width: 650px;
     margin: 20px 0;
 }
 

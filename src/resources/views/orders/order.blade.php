@@ -34,7 +34,7 @@
                         <td>¥{{ number_format($product->price) }}</td>
                     </tr>
                     <tr>
-                        <th>支払方法</th>
+                        <th>支払い方法</th>
                         <td>
                             @php
                                 // ① request に値があるならそれを優先
@@ -64,7 +64,7 @@
 
             {{-- 左ブロック：支払い方法選択 --}}
             <div class="order-form__left order-form__payment-left">
-                <label for="payment_method" class="payment-label">支払方法</label>
+                <label for="payment_method" class="payment-label">支払い方法</label>
                 <div class="order-form__select-inner">
                     <select id="payment_method" name="payment_method" class="order-form__select" {{ $isPurchased ? 'disabled' : '' }}>
                         <option value="" {{ empty($payment) ? 'selected' : '' }}>選択してください</option>
@@ -96,7 +96,6 @@
         下ブロック：配送先情報
     ============================= --}}
     <div class="order-form__block order-form__address-area">
-
         {{-- 左ブロック：配送先情報 --}}
         <div class="order-form__left">
             <div class="address-header">
@@ -113,8 +112,6 @@
                     <span>{{ $address->building }}</span>
                 @endif
             </div>
-
-
             <hr class="address-divider">
         </div>
 

@@ -1,7 +1,7 @@
 .login-form__content {
-    margin: 0 auto;
-    padding: 30px 15px;
     width: 680px;
+    margin: 0 auto;
+    padding: 40px 0;
 }
 
 .login-form__inner {
@@ -17,21 +17,19 @@
 }
 
 .login-form__heading {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.form__label--item {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .register__button-submit {
     text-decoration: none;
-}
-
-@media screen and (min-width: 1400px) and (max-width: 1540px) {
-    .login-form__form {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 40px;
-        box-sizing: border-box;
-    }
 }
 
 .form__group {
@@ -52,33 +50,48 @@
 .form__input--text input {
     padding: 10px;
     width: 100%;
-    height: 40px;
-    border: 1px solid #ddd;
+    height: 60px;
+    border: 1px solid #5F5F5F;
     border-radius: 3px;
-
     appearance: none;
 }
 
 .form__button {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .form__button-submit {
     padding: 10px;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border: none;
     border-radius: 3px;
     background: #FF5555;
     color: #fff;
+    font-size: 26px;
+    font-weight: bold;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 .register__link {
     text-align: center;
     appearance: none;
+    margin-top: 20px;
 }
 
 .register__link a {
     color: #0073CC;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .login-form__form {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
 }
