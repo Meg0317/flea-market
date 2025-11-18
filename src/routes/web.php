@@ -41,8 +41,6 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/profile/create', [ProfileController::class, 'create']);
         Route::post('/profile', [ProfileController::class, 'store']);
     });
-    Route::get('/profile/create', [ProfileController::class, 'create']);
-    Route::post('profile', [ProfileController::class, 'store']);
     Route::get('/purchase/{item_id}', [PurchaseController::class, 'purchase']);
     Route::post('/purchase/{item_id}', [PurchaseController::class, 'purchase']);
     Route::get('/purchase/address/{item_id}', [PurchaseController::class, 'address']);

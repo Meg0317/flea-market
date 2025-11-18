@@ -7,12 +7,11 @@
 .edit-form__heading {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-top: 20px;
     text-align: center;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 36px;
 }
 
 .edit-form__inner {
@@ -30,7 +29,7 @@ h2 {
 .form__input--text input,
 .form__button-submit {
     width: 100%;
-    height: 50px;
+    height: 55px;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #5F5F5F;
@@ -48,16 +47,16 @@ h2 {
 
 /* 画像（登録済み） */
 .profile-image {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 /* 画像なし（デフォルトの灰丸） */
 .profile-image--default {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: #d9d9d9;
 }
@@ -69,19 +68,19 @@ h2 {
 /* 「画像を選択する」ラベルボタン */
 .image-upload-label {
     display: inline-block;
-    color: #ff4b4b;
+    color: #FF5555;
     /* 赤文字 */
-    border: 2px solid #ff4b4b;
+    border: 2px solid #FF5555;
     /* 赤枠 */
-    padding: 10px 24px;
+    padding: 10px 5px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s;
     text-align: center;
-    font-size: 16px;
-    width: 168px;
-    height: 43.46px;
+    font-size: 20px;
+    width: 179px;
+    height: 49px;
     line-height: 23px;
     /* 中央揃え調整 */
 }
@@ -91,21 +90,18 @@ h2 {
     color: #FF5555;
 }
 
-.form__group {
-    margin-bottom: 5px;
-}
-
 .form__group-content {
     margin-bottom: 30px;
 }
 
 .form__group-title {
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .form__label--item {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .form__input--text input {
@@ -121,20 +117,22 @@ h2 {
 .form__button-submit {
     padding: 10px;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border: none;
     border-radius: 3px;
     background: #FF5555;
-    color: #fff;
+    color: #FFFFFF;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
 }
 
 .edit-form__error-message {
     height: 20px;
-    color: #FF5555;
+    color: #ff0000;
     text-align: left;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1540px) {

@@ -51,7 +51,7 @@
                     @endforeach
                 </div>
                 <p class="exhibit-form__error-message">
-                    @error('category_id')
+                    @error('category_ids')
                         {{ $message }}
                     @enderror
                 </p>
@@ -91,11 +91,11 @@
                     <div class="form__input--text">
                         <input type="text" name="name" value="{{ old('name') }}" />
                     </div>
-                    <div class="exhibit-form__error-message">
+                    <p class="exhibit-form__error-message">
                         @error('name')
                             {{ $message }}
                         @enderror
-                    </div>
+                    </p>
                 </div>
             </div>
 
@@ -119,11 +119,11 @@
                         <textarea name="description">{{ old('description') }}</textarea>
                     </div>
                 </div>
-                <div class="exhibit-form__error-message">
+                <p class="exhibit-form__error-message">
                     @error('description')
                         {{ $message }}
                     @enderror
-                </div>
+                </p>
             </div>
 
             <div class="form__group">
@@ -137,11 +137,11 @@
                     </div>
                 </div>
             </div>
-            <div class="exhibit-form__error-message">
+            <p class="exhibit-form__error-message">
                 @error('price')
                     {{ $message }}
                 @enderror
-            </div>
+            </p>
 
             <div class="form__button">
                 <button class="form__button-submit" type="submit">出品する</button>

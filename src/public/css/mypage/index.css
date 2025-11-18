@@ -53,25 +53,7 @@
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
 }
-
-.profile-menu .profile-change__send:hover {
-    background-color: #FF5555;
-    color: #fff;
-}
-
-/* .profile-change__send {
-    border-radius: 3px;
-    border: 2px solid #FF5555;
-    width: 200px;
-    padding: 10px 0;
-    color: #FF5555;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-} */
 
 .product-menu {
     display: flex;
